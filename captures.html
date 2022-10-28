@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Captures</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="public/css/design.css">
+  <script src="dot.js"></script>
+
+
+
+  <link rel="icon" type="image/x-icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/lg/307/camera-with-flash_1f4f8.png">
+
+  <style>
+  /* html{-webkit-animation:color-change-2x 4s linear infinite alternate-reverse both;animation:color-change-2x 4s linear infinite alternate reverse}
+  @-webkit-keyframes color-change-2x{0%{background:#17202A}100%{background:black}
+  @keyframes color-change-2x{0%{background:#17202A}100%{background:black} */
+
+
+  #captures{
+    animation: bounce-in-top 1.0s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+  }
+  @keyframes bounce-in-top {
+    0% {
+      transform: translateY(-500px);
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    38% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    55% {
+      transform: translateY(-65px);
+      animation-timing-function: ease-in;
+    }
+    72% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+    }
+    81% {
+      transform: translateY(-28px);
+      animation-timing-function: ease-in;
+    }
+    90% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+    }
+    95% {
+      transform: translateY(-8px);
+      animation-timing-function: ease-in;
+    }
+    100% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+    }
+  }
+
+</style>
+
+<style>
+
+.starsec{
+  content: " ";
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 100%;
+  background: transparent;
+  box-shadow: 571px 173px #00BCD4, 1732px 143px #00BCD4, 1745px 454px #FF5722, 234px 784px #00BCD4, 1793px 1123px #FF9800, 1076px 504px #03A9F4, 633px 601px #FF5722, 350px 630px #FFEB3B, 1164px 782px #00BCD4, 76px 690px #3F51B5, 1825px 701px #CDDC39, 1646px 578px #FFEB3B, 544px 293px #2196F3, 445px 1061px #673AB7, 928px 47px #00BCD4, 168px 1410px #8BC34A, 777px 782px #9C27B0, 1235px 1941px #9C27B0, 104px 1690px #8BC34A, 1167px 1338px #E91E63, 345px 1652px #009688, 1682px 1196px #F44336, 1995px 494px #8BC34A, 428px 798px #FF5722, 340px 1623px #F44336, 605px 349px #9C27B0, 1339px 1344px #673AB7, 1102px 1745px #3F51B5, 1592px 1676px #2196F3, 419px 1024px #FF9800, 630px 1033px #4CAF50, 1995px 1644px #00BCD4, 1092px 712px #9C27B0, 1355px 606px #F44336, 622px 1881px #CDDC39, 1481px 621px #9E9E9E, 19px 1348px #8BC34A, 864px 1780px #E91E63, 442px 1136px #2196F3, 67px 712px #FF5722, 89px 1406px #F44336, 275px 321px #009688, 592px 630px #E91E63, 1012px 1690px #9C27B0, 1749px 23px #673AB7, 94px 1542px #FFEB3B, 1201px 1657px #3F51B5, 1505px 692px #2196F3, 1799px 601px #03A9F4, 656px 811px #00BCD4, 701px 597px #00BCD4, 1202px 46px #FF5722, 890px 569px #FF5722, 1613px 813px #2196F3, 223px 252px #FF9800, 983px 1093px #F44336, 726px 1029px #FFC107, 1764px 778px #CDDC39, 622px 1643px #F44336, 174px 1559px #673AB7, 212px 517px #00BCD4, 340px 505px #FFF, 1700px 39px #FFF, 1768px 516px #F44336, 849px 391px #FF9800, 228px 1824px #FFF, 1119px 1680px #FFC107, 812px 1480px #3F51B5, 1438px 1585px #CDDC39, 137px 1397px #FFF, 1080px 456px #673AB7, 1208px 1437px #03A9F4, 857px 281px #F44336, 1254px 1306px #CDDC39, 987px 990px #4CAF50, 1655px 911px #00BCD4, 1102px 1216px #FF5722, 1807px 1044px #FFF, 660px 435px #03A9F4, 299px 678px #4CAF50, 1193px 115px #FF9800, 918px 290px #CDDC39, 1447px 1422px #FFEB3B, 91px 1273px #9C27B0, 108px 223px #FFEB3B, 146px 754px #00BCD4, 461px 1446px #FF5722, 1004px 391px #673AB7, 1529px 516px #F44336, 1206px 845px #CDDC39, 347px 583px #009688, 1102px 1332px #F44336, 709px 1756px #00BCD4, 1972px 248px #FFF, 1669px 1344px #FF5722, 1132px 406px #F44336, 320px 1076px #CDDC39, 126px 943px #FFEB3B, 263px 604px #FF5722, 1546px 692px #F44336;
+  animation: animStar 150s linear infinite;
+}
+
+.starthird
+{
+  content: " ";
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 100%;
+  background: transparent;
+  box-shadow: 571px 173px #00BCD4, 1732px 143px #00BCD4, 1745px 454px #FF5722, 234px 784px #00BCD4, 1793px 1123px #FF9800, 1076px 504px #03A9F4, 633px 601px #FF5722, 350px 630px #FFEB3B, 1164px 782px #00BCD4, 76px 690px #3F51B5, 1825px 701px #CDDC39, 1646px 578px #FFEB3B, 544px 293px #2196F3, 445px 1061px #673AB7, 928px 47px #00BCD4, 168px 1410px #8BC34A, 777px 782px #9C27B0, 1235px 1941px #9C27B0, 104px 1690px #8BC34A, 1167px 1338px #E91E63, 345px 1652px #009688, 1682px 1196px #F44336, 1995px 494px #8BC34A, 428px 798px #FF5722, 340px 1623px #F44336, 605px 349px #9C27B0, 1339px 1344px #673AB7, 1102px 1745px #3F51B5, 1592px 1676px #2196F3, 419px 1024px #FF9800, 630px 1033px #4CAF50, 1995px 1644px #00BCD4, 1092px 712px #9C27B0, 1355px 606px #F44336, 622px 1881px #CDDC39, 1481px 621px #9E9E9E, 19px 1348px #8BC34A, 864px 1780px #E91E63, 442px 1136px #2196F3, 67px 712px #FF5722, 89px 1406px #F44336, 275px 321px #009688, 592px 630px #E91E63, 1012px 1690px #9C27B0, 1749px 23px #673AB7, 94px 1542px #FFEB3B, 1201px 1657px #3F51B5, 1505px 692px #2196F3, 1799px 601px #03A9F4, 656px 811px #00BCD4, 701px 597px #00BCD4, 1202px 46px #FF5722, 890px 569px #FF5722, 1613px 813px #2196F3, 223px 252px #FF9800, 983px 1093px #F44336, 726px 1029px #FFC107, 1764px 778px #CDDC39, 622px 1643px #F44336, 174px 1559px #673AB7, 212px 517px #00BCD4, 340px 505px #FFF, 1700px 39px #FFF, 1768px 516px #F44336, 849px 391px #FF9800, 228px 1824px #FFF, 1119px 1680px #FFC107, 812px 1480px #3F51B5, 1438px 1585px #CDDC39, 137px 1397px #FFF, 1080px 456px #673AB7, 1208px 1437px #03A9F4, 857px 281px #F44336, 1254px 1306px #CDDC39, 987px 990px #4CAF50, 1655px 911px #00BCD4, 1102px 1216px #FF5722, 1807px 1044px #FFF, 660px 435px #03A9F4, 299px 678px #4CAF50, 1193px 115px #FF9800, 918px 290px #CDDC39, 1447px 1422px #FFEB3B, 91px 1273px #9C27B0, 108px 223px #FFEB3B, 146px 754px #00BCD4, 461px 1446px #FF5722, 1004px 391px #673AB7, 1529px 516px #F44336, 1206px 845px #CDDC39, 347px 583px #009688, 1102px 1332px #F44336, 709px 1756px #00BCD4, 1972px 248px #FFF, 1669px 1344px #FF5722, 1132px 406px #F44336, 320px 1076px #CDDC39, 126px 943px #FFEB3B, 263px 604px #FF5722, 1546px 692px #F44336;
+  animation: animStar 5s linear infinite;
+}
+
+.starfourth
+{
+  content: " ";
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  border-radius: 100%;
+  background: transparent;
+  box-shadow: 571px 173px #00BCD4, 1732px 143px #00BCD4, 1745px 454px #FF5722, 234px 784px #00BCD4, 1793px 1123px #FF9800, 1076px 504px #03A9F4, 633px 601px #FF5722, 350px 630px #FFEB3B, 1164px 782px #00BCD4, 76px 690px #3F51B5, 1825px 701px #CDDC39, 1646px 578px #FFEB3B, 544px 293px #2196F3, 445px 1061px #673AB7, 928px 47px #00BCD4, 168px 1410px #8BC34A, 777px 782px #9C27B0, 1235px 1941px #9C27B0, 104px 1690px #8BC34A, 1167px 1338px #E91E63, 345px 1652px #009688, 1682px 1196px #F44336, 1995px 494px #8BC34A, 428px 798px #FF5722, 340px 1623px #F44336, 605px 349px #9C27B0, 1339px 1344px #673AB7, 1102px 1745px #3F51B5, 1592px 1676px #2196F3, 419px 1024px #FF9800, 630px 1033px #4CAF50, 1995px 1644px #00BCD4, 1092px 712px #9C27B0, 1355px 606px #F44336, 622px 1881px #CDDC39, 1481px 621px #9E9E9E, 19px 1348px #8BC34A, 864px 1780px #E91E63, 442px 1136px #2196F3, 67px 712px #FF5722, 89px 1406px #F44336, 275px 321px #009688, 592px 630px #E91E63, 1012px 1690px #9C27B0, 1749px 23px #673AB7, 94px 1542px #FFEB3B, 1201px 1657px #3F51B5, 1505px 692px #2196F3, 1799px 601px #03A9F4, 656px 811px #00BCD4, 701px 597px #00BCD4, 1202px 46px #FF5722, 890px 569px #FF5722, 1613px 813px #2196F3, 223px 252px #FF9800, 983px 1093px #F44336, 726px 1029px #FFC107, 1764px 778px #CDDC39, 622px 1643px #F44336, 174px 1559px #673AB7, 212px 517px #00BCD4, 340px 505px #FFF, 1700px 39px #FFF, 1768px 516px #F44336, 849px 391px #FF9800, 228px 1824px #FFF, 1119px 1680px #FFC107, 812px 1480px #3F51B5, 1438px 1585px #CDDC39, 137px 1397px #FFF, 1080px 456px #673AB7, 1208px 1437px #03A9F4, 857px 281px #F44336, 1254px 1306px #CDDC39, 987px 990px #4CAF50, 1655px 911px #00BCD4, 1102px 1216px #FF5722, 1807px 1044px #FFF, 660px 435px #03A9F4, 299px 678px #4CAF50, 1193px 115px #FF9800, 918px 290px #CDDC39, 1447px 1422px #FFEB3B, 91px 1273px #9C27B0, 108px 223px #FFEB3B, 146px 754px #00BCD4, 461px 1446px #FF5722, 1004px 391px #673AB7, 1529px 516px #F44336, 1206px 845px #CDDC39, 347px 583px #009688, 1102px 1332px #F44336, 709px 1756px #00BCD4, 1972px 248px #FFF, 1669px 1344px #FF5722, 1132px 406px #F44336, 320px 1076px #CDDC39, 126px 943px #FFEB3B, 263px 604px #FF5722, 1546px 692px #F44336;
+  animation: animStar 50s linear infinite;
+}
+
+.starfifth
+{
+  content: " ";
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border-radius: 100%;
+  background: transparent;
+  box-shadow: 571px 173px #00BCD4, 1732px 143px #00BCD4, 1745px 454px #FF5722, 234px 784px #00BCD4, 1793px 1123px #FF9800, 1076px 504px #03A9F4, 633px 601px #FF5722, 350px 630px #FFEB3B, 1164px 782px #00BCD4, 76px 690px #3F51B5, 1825px 701px #CDDC39, 1646px 578px #FFEB3B, 544px 293px #2196F3, 445px 1061px #673AB7, 928px 47px #00BCD4, 168px 1410px #8BC34A, 777px 782px #9C27B0, 1235px 1941px #9C27B0, 104px 1690px #8BC34A, 1167px 1338px #E91E63, 345px 1652px #009688, 1682px 1196px #F44336, 1995px 494px #8BC34A, 428px 798px #FF5722, 340px 1623px #F44336, 605px 349px #9C27B0, 1339px 1344px #673AB7, 1102px 1745px #3F51B5, 1592px 1676px #2196F3, 419px 1024px #FF9800, 630px 1033px #4CAF50, 1995px 1644px #00BCD4, 1092px 712px #9C27B0, 1355px 606px #F44336, 622px 1881px #CDDC39, 1481px 621px #9E9E9E, 19px 1348px #8BC34A, 864px 1780px #E91E63, 442px 1136px #2196F3, 67px 712px #FF5722, 89px 1406px #F44336, 275px 321px #009688, 592px 630px #E91E63, 1012px 1690px #9C27B0, 1749px 23px #673AB7, 94px 1542px #FFEB3B, 1201px 1657px #3F51B5, 1505px 692px #2196F3, 1799px 601px #03A9F4, 656px 811px #00BCD4, 701px 597px #00BCD4, 1202px 46px #FF5722, 890px 569px #FF5722, 1613px 813px #2196F3, 223px 252px #FF9800, 983px 1093px #F44336, 726px 1029px #FFC107, 1764px 778px #CDDC39, 622px 1643px #F44336, 174px 1559px #673AB7, 212px 517px #00BCD4, 340px 505px #FFF, 1700px 39px #FFF, 1768px 516px #F44336, 849px 391px #FF9800, 228px 1824px #FFF, 1119px 1680px #FFC107, 812px 1480px #3F51B5, 1438px 1585px #CDDC39, 137px 1397px #FFF, 1080px 456px #673AB7, 1208px 1437px #03A9F4, 857px 281px #F44336, 1254px 1306px #CDDC39, 987px 990px #4CAF50, 1655px 911px #00BCD4, 1102px 1216px #FF5722, 1807px 1044px #FFF, 660px 435px #03A9F4, 299px 678px #4CAF50, 1193px 115px #FF9800, 918px 290px #CDDC39, 1447px 1422px #FFEB3B, 91px 1273px #9C27B0, 108px 223px #FFEB3B, 146px 754px #00BCD4, 461px 1446px #FF5722, 1004px 391px #673AB7, 1529px 516px #F44336, 1206px 845px #CDDC39, 347px 583px #009688, 1102px 1332px #F44336, 709px 1756px #00BCD4, 1972px 248px #FFF, 1669px 1344px #FF5722, 1132px 406px #F44336, 320px 1076px #CDDC39, 126px 943px #FFEB3B, 263px 604px #FF5722, 1546px 692px #F44336;
+  animation: animStar 80s linear infinite;
+}
+@keyframes animStar
+{
+  0% {
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-1000px);
+  }
+  100% {
+    transform: translateY(-2000px);
+  }
+}
+</style>
+
+</head>
+<body>
+
+
+
+  <div>
+    <div class="starsec"></div>
+    <div class="starthird"></div>
+    <div class="starfourth"></div>
+    <div class="starfifth"></div>
+  </div>
+
+
+
+
+
+  <div class="top" style="color:white; background-image:linear-gradient(to bottom right, black , yellow, black, black, black, black, black, black, black, #17202A, #17202A);">
+    <div class="bar" id="myNavbar">
+      <a class="bar-item button hover-black hide-medium hide-large right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="index.html" title="🏠Home" class="bar-item button">Home</a>
+      <a href="captures.html" title="Captures" class="bar-item button hide-small" id="link-cap"><i class="fa fa-image"></i> Captures</a>
+      <a href="about.html" title="About" class="bar-item button hide-small"><i class="fa fa-user-circle"></i> About</a>
+      <a href="contact.html" title="Contact" class="bar-item button hide-small"><i class="fa fa-envelope"></i> Contact</a>
+      <a href="gallery.html" title="Gallery" class="bar-item button hide-small" target="_blank"><i class="fa fa-envira"></i> Gallery</a>
+
+    <!-- </a> -->
+  </div>
+
+  <!-- Navbar -->
+  <div id="navDemo" class="bar-block white hide hide-large hide-medium">
+    <a href="about.html" class="bar-item button"  onclick="toggleFunction()"><i class="fa fa-user-circle"></i> About</a>
+    <a href="contact.html" class="bar-item button"  onclick="toggleFunction()"><i class="fa fa-envelope"></i> Contact</a>
+    <a href="gallery.html" class="bar-item button"  onclick="toggleFunction()" target="_blank"><i class="fa fa-envira"></i> Gallery</a>
+
+  </div>
+</div>
+
+
+
+<!-- Container -->
+<div class="content container padding-64" id="captures">
+  <a href="/captures.html"><h3 class="center">My Captures</h3></a>
+  <p class="center" id="lol"><em>Here are some of my latest clicked snapshots.</em></p><hr></hr>
+
+
+
+
+
+
+  <!--  IMG GRID -->
+  <div class="row-padding center" style="background-image:linear-gradient(to bottom right, grey , lightgrey 50% ); padding:3%; border-radius:5px; box-shadow:-1.5px -1.5px 3px 0px black">
+    <div class="col m3">
+      <img src="public/images/img1.jpg" style="width:100%; border-radius:3px; box-shadow: 1.5px 1.5px 3px 1px grey;" onclick="onClick(this)" class="hover-opacity" alt="1" title="All contents in this page are self-captuyellow.">
+    </div>
+
+    <div class="col m3">
+      <img src="public/images/img2.jpg" style="width:100%; border-radius:3px; box-shadow: 1.5px 1.5px 3px 1px grey;" onclick="onClick(this)" class="hover-opacity" alt="2" title="All contents in this page are self-captuyellow.">
+    </div>
+
+    <div class="col m3">
+      <img src="public/images/180023612870381230614840403102531980065799001600096.jpg" style="width:100%; border-radius:3px; box-shadow: 1.5px 1.5px 3px 1px grey;" onclick="onClick(this)" class="hover-opacity" alt="3" title="All contents in this page are self-captuyellow.">
+    </div>
+
+    <div class="col m3">
+      <img src="public/images/img4.jpg" style="width:100%; border-radius:3px; box-shadow: 1.5px 1.5px 3px 1px grey;" onclick="onClick(this)" class="hover-opacity" alt="4" title="All contents in this page are self-captuyellow.">
+    </div>
+  </div>
+
+
+
+
+
+  <div class="row-padding center section" style="background-image:linear-gradient(to bottom right, lightgrey 50%, grey); padding:3%; border-radius:5px; box-shadow:1.5px 1.5px 3px 0px black;">
+    <div class="col m3">
+      <img src="public/images/img5.jpg" style="width:100%; border-radius:3px; box-shadow: -1.5px -1.5px 3px 0px grey;" onclick="onClick(this)" class="hover-opacity" alt="5" title="All contents in this page are self-captuyellow.">
+    </div>
+
+    <div class="col m3">
+      <img src="public/images/img6.jpg" style="width:100%; border-radius:3px; box-shadow: -1.5px -1.5px 3px 0px grey;" onclick="onClick(this)" class="hover-opacity" alt="6" title="All contents in this page are self-captuyellow.">
+    </div>
+
+    <div class="col m3">
+      <img src="public/images/img7.jpg" style="width:100%; border-radius:3px; box-shadow: -1.5px -1.5px 3px 0px grey;" onclick="onClick(this)" class="hover-opacity" alt="7" title="All contents in this page are self-captuyellow.">
+    </div>
+
+    <div class="col m3">
+      <img src="public/images/img8.jpg" style="width:100%; border-radius:3px; box-shadow: -1.5px -1.5px 3px 0px grey;" onclick="onClick(this)" class="hover-opacity" alt="8" title="All contents in this page are self-captuyellow.">
+    </div>
+    <a href="gallery.html"><button class="old-button button padding-large light-grey old-button" title="Explore Gallery" style="margin-top:64px; border-radius: 10px; box-shadow: -2px -2px 2px 2px dimgrey;">More</button></a>
+  </div>
+</div>
+
+
+
+<!--  Modal for full size images on click-->
+<div id="modal01" class="modal black" onclick="this.style.display='none'">
+  <span class="button large black display-topright" title="Close"><i class="fa fa-remove"></i></span>
+  <div class="modal-content animate-zoom center transparent padding-64">
+    <img id="img01" class="image">
+    <p id="caption" class="opacity large"></p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="center black padding-64 opacity hover-opacity-off" style="background-image:linear-gradient(to top, black,  black);">
+
+  <a href="#captures" title="Scroll above" class="button light-grey new-button" style="border-radius:5px; background-image:linear-gradient(to bottom left, black, white,  black);"><i class="fa fa-arrow-circle-up" style="color:yellow;"></i> scroll to top</a>
+  <div class="xlarge section">
+    <a class="link1" title="Facebook" href="https://touch.facebook.com/PadmanabhaPR" target="_blank"><i class="fa fa-facebook-official hover-opacity"></i></a>
+    <a class="link2" title="Instagram" href="https://www.instagram.com/proy_______/" target="_blank"><i class="fa fa-instagram hover-opacity"></i></a>
+    <a class="link3" title="Twitter" href="https://twitter.com/proy_______" target="_blank"><i class="fa fa-twitter hover-opacity"></i></a>
+    <a class="link4" title="LinkedIN" href="https://www.linkedin.com/in/padmanabha-roy-65338b1b6/" target="_blank"><i class="fa fa-linkedin hover-opacity"></i></a>
+    <a class="link5" title="YouTube" href="https://www.youtube.com/channel/UCP-W10lOFoCU7UJ7Y32wphQ/videos" target="_blank"><i class="fa fa-youtube hover-opacity"></i></a>
+  </div>
+
+
+
+
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+// Modal Image Gallery
+function onClick(element) {
+
+
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+  var navbar = document.getElementById("myNavbar");
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    navbar.className = "bar" + " card" + " animate-top" + " white";
+  } else {
+    navbar.className = navbar.className.replace(" card animate-top white", "");
+  }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("show") == -1) {
+    x.className += " show";
+
+  } else {
+    x.className = x.className.replace(" show", "");
+  }
+}
+
+
+</script>
+
+
+
+
+<noscript>
+  <style>body { display:none; }</style>
+  <meta http-equiv="refresh" content="0; url=nojs/shownothing.html">
+</noscript>
+
+
+
+
+
+
+</body>
+</html>
