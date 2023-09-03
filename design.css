@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@610&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@610&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 
 
 
@@ -23,7 +25,8 @@ html{
 
 
 *{
-  font-family: 'Cairo', sans-serif;
+/*   font-family: 'Cairo', sans-serif; */
+  font-family: 'Raleway', sans-serif;
   font-size: 18px;
   transition: .2s linear;
   box-sizing: border-box;
