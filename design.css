@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@610&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
@@ -34,7 +34,7 @@ html{
 
 
 body,h1,h2,h3,h4,h5,h6 {
-  font-family: 'Cairo', sans-serif;
+   font-family: 'Raleway', sans-serif;
 }
 
 * a{
@@ -116,7 +116,7 @@ button :hover{
 }
 
 h3{
-  font-family: 'El Messiri', sans-serif;
+/*   font-family: 'El Messiri', sans-serif; */
   color: black;
   font-weight: 500;
   background-image: linear-gradient(to top right, lightgrey, white);
@@ -209,7 +209,7 @@ h3:hover{
   border-radius: 0px;
   padding: 1%;
   text-shadow: -.5px -.5px 0px grey!important;
-  font-family: 'El Messiri', sans-serif;
+/*   font-family: 'El Messiri', sans-serif; */
   letter-spacing: 5px;
 }
 
@@ -470,7 +470,7 @@ h3:hover{
   pre,
   samp {
 
-    font-family: 'Cairo', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1em;
   }
 
@@ -567,7 +567,7 @@ h3:hover{
 
   body {
 
-    font-family: 'Cairo', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 15px;
     line-height: 1.5;
   }
@@ -605,22 +605,22 @@ h3:hover{
 
   .serif {
 
-    font-family: 'Cairo', sans-serif;
+    font-family: 'Raleway', sans-serif;
   }
 
   .sans-serif {
 
-    font-family: 'Cairo', sans-serif;
+    font-family: 'Raleway', sans-serif;
   }
 
   .cursive {
 
-    font-family: 'Cairo', sans-serif;
+    font-family: 'Raleway', sans-serif;
   }
 
   .monospace {
 
-    font-family: 'Cairo', sans-serif;
+    font-family: 'Raleway', sans-serif;
   }
 
   h1,
@@ -1690,7 +1690,7 @@ h3:hover{
 .code,
 .codespan {
 
-  font-family: 'Cairo', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 16px;
 }
 
