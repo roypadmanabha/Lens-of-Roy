@@ -5,6 +5,7 @@
 
 
 
+
 html{
   background-color: black;
   background-repeat: no-repeat;
@@ -19,6 +20,8 @@ html{
   text-align: justify;
   line-height: 1.8;
   scroll-behavior: smooth;
+  
+  touch-action: none;
 }
 
 
